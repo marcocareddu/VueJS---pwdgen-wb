@@ -45,7 +45,7 @@ header {
     color: white;
     border-bottom: 1px solid white;
     background-color: var(--main-color);
-    
+
 }
 
 /* Main */
@@ -53,7 +53,7 @@ main {
     height: calc(100vh - 80px);
 }
 
-#risposta, 
+#risposta,
 .megablock {
     border-radius: 20px;
 }
@@ -74,6 +74,24 @@ main {
 .megablock p {
     font-size: 40px;
     padding: 20px 0px;
+}
+
+/* Inputs and Button */
+input {
+    border: 2px solid var(--main-color);
+}
+
+button {
+    background: var(--main-color);
+    padding: 0px 5px;
+    color: white;
+}
+
+input,
+button {
+    border-radius: 5px;
+    height: 30px;
+    margin: 5px 0px;
 }
 
 
@@ -101,4 +119,3 @@ main {
         width: 1080px;
     }
 }
-
