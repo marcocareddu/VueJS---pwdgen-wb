@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Class #100">
+    <meta name="keywords" content="Password Manager, pwd, Javascript">
+    <title>JS PWD Manager Wanna Be</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Pangolin&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+
+    <!-- Vue JS -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <!-- Javascript -->
+    <script defer src="./JS/javascript.js"></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="d-flex justify-center align-center">
+        <h1>SUPER MEGA SECURE PASSWORD GENERATOR 2000 - VUE JS</h1>
+    </header>
+
+    <!-- Main -->
+    <div id="root">
+        <main class="d-flex justify-center align-center">
+            <div class="container d-flex justify-center align-center flex-column megablock">
+                <div><input type="text" placeholder="Nome" v-model.trim="nome"></div>
+                <div><input type="text" placeholder="Cognome" v-model.trim="cognome"></div>
+                <div><input type="text" placeholder="Colore Preferito" v-model.trim="colorePreferito"></div>
+                <div><input type="number" placeholder="Suffisso" v-model.trim="suffisso"></div>
+                <button v-on:click="pwdGenerator">Genera Password</button>
+                <p>La tua nuova password fiammante e supersicura è:</p>
+                <div id="risposta" class="d-flex justify-center align-center">
+                    <span>{{pwd}}</span>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
